@@ -1,0 +1,61 @@
+Documento Descritivo - Sistema de Gerenciamento da TechStore
+Introdução
+A TechStore é uma empresa fictícia especializada na venda de produtos eletrônicos e serviços de assistência técnica. Este documento descreve o sistema de gerenciamento desenvolvido para a TechStore, abrangendo os tipos de usuários que interagem com o sistema, os produtos e serviços oferecidos pela empresa, bem como as funcionalidades implementadas para gerenciar esses elementos.
+
+Implementação
+Usuários
+Estrutura de Dados Escolhida:
+
+Para armazenar as informações dos usuários, foi escolhido um dicionário em Python. Cada usuário é representado por uma chave (nome de usuário) e um valor (lista contendo nome, senha, tipo de usuário e permissões).
+Arquivo de Registro (usuarios.csv):
+
+O arquivo usuarios.csv foi estruturado da seguinte forma:
+
+nome,senha,tipo,permissoes
+Gerente,senha123,gerente,C,R,U,D
+Funcionário,senha456,funcionario,C,R
+Cliente,senha789,cliente,
+
+
+Este arquivo contém os registros de usuários da TechStore, onde cada linha representa um usuário com suas respectivas informações.
+Funcionalidades Implementadas:
+
+C (Create): Adicionar um novo usuário ao sistema.
+R (Read): Listar todos os usuários cadastrados.
+U (Update): Atualizar informações de um usuário existente.
+D (Delete): Remover um usuário do sistema.
+Funcionalidades Específicas:
+Listar usuários por tipo.
+Validar login e permissões de acesso.
+Produtos/Serviços
+Estrutura de Dados Escolhida:
+
+Para os produtos/serviços, optou-se por uma lista de dicionários em Python. Cada dicionário representa um produto ou serviço com atributos como nome, preço e quantidade.
+Arquivo de Registro (produtos.txt):
+O arquivo produtos.txt armazena os registros de produtos e serviços da TechStore:
+
+mathematica
+Copiar código
+Notebook,3500.00,10
+Smartphone,2500.00,20
+Tablet,1200.00,15
+Assistência Técnica,200.00,50
+
+
+
+Cada linha contém informações de um produto ou serviço, separadas por vírgulas.
+Funcionalidades Implementadas:
+
+C (Create): Adicionar um novo produto ou serviço ao sistema.
+R (Read): Listar todos os produtos/serviços cadastrados.
+U (Update): Atualizar informações de um produto ou serviço existente.
+D (Delete): Remover um produto ou serviço do sistema.
+Funcionalidades Específicas:
+Buscar um produto por nome.
+Imprimir os produtos ordenados por nome.
+Imprimir os produtos ordenados por preço.
+Conclusão
+Este projeto permitiu desenvolver um sistema funcional para a TechStore, utilizando conceitos fundamentais de programação em Python como estruturas de dados, manipulação de arquivos, funções, entre outros. Durante o desenvolvimento, enfrentamos desafios na implementação de validações de entrada e na organização dos dados em arquivos, porém, essas dificuldades foram superadas com sucesso.
+
+Para melhorias futuras, consideraríamos a implementação de uma interface gráfica para facilitar a interação do usuário com o sistema e a inclusão de mais funcionalidades avançadas, como relatórios de vendas e controle de estoque em tempo real.
+
